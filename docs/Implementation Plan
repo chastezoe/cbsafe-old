@@ -1,5 +1,6 @@
 # CBSafe Implementation Plan
 
+- [ ] Config files
 - [ ] Home screen
 - [ ] Configuration
 - [ ] Login 
@@ -8,5 +9,6 @@
     - [ ] Developer
     - [ ] Scripter
     - [ ] Build
-- [ ] Setup
+- [ ] Setup Wizard
+- [ ] Build device
 - [ ] Update Mechanism
