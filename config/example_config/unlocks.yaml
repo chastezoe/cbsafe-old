@@ -1,0 +1,56 @@
+# This file lists the types of unlocks. All times are given in 
+# minutes, unless otherwise specified.
+
+warning_beeps_seconds: []
+
+grace_period_seconds: 90
+grace_period_exceeded_callback: "unlock_grace_period_exceeded"
+orgasm_penalty_callback: "unlock_orgasmed_unauthorized_callback"
+
+
+unlock_default_callbacks:
+  wearer_init_callback: "unlock_default"
+  kh_init_callback: "unlock_default"
+  wearer_request_callback: "unlock_request_default"
+  orgasm_penalty_callback: "unlock_orgasmed_unauthorized_callback"
+  
+
+default_unlock_template:
+  display_name: "Cleaning"
+  wearer_can_init: true
+  wearer_can_request: true
+
+unlocks:
+  cleaning:
+    display_name: "Cleaning"
+    wearer_can_init: true
+    wearer_can_request: true
+  dilation:
+    display_name: "Dilation"
+    wearer_can_init: true
+    wearer_can_request: true
+    disabled_by_notouch: false
+  play:
+    display_name: "Play"
+    enabled: true
+    wearer_can_init: true
+    wearer_can_request: true
+    disabled_by_notouch: true
+  release:
+    display_name: "Release"
+    enabled: true
+    wearer_can_init: true
+    wearer_can_request: true
+    disabled_by_notouch: true
+  break:
+    display_name : "Break"
+    wearer_can_init: false
+    wearer_can_request: true
+  #I strongly recommend that Emergency not be disabled without a
+  #backup emergency plan, such as a key in a sealed envelope.
+  emergency:
+    display_name: "Emergency"
+    wearer_init_delay_seconds: 300 
+    wearer_can_init: true
+    wearer_can_request: true
+

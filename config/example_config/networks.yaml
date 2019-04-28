@@ -1,0 +1,14 @@
+# This file defines the networks for CBSafe. It will attempt to 
+# find and connect to networks in the sequence they are defined.
+# Note that this only works for 2.4GHz networks. If no networks
+# are found, CBSafe will create it's own network.
+
+self_network:
+  name: "CBSafe"
+  password : "CBSafe"
+
+networks: [
+  # format is "network_name", "network_pass"
+]
+
+

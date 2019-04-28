@@ -1,0 +1,14 @@
+# This file configures the types of events that can be reported.
+
+reports:
+  edged:
+    display_name: "Edged"
+    handler: "report_edged"
+  orgasmed:
+    display_name: "Orgasmed"
+    handler: "report_orgasmed"
+  ruined:
+    display_name: "Ruined"
+    handler: "report_ruined"
+    
+    

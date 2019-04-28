@@ -1,0 +1,1 @@
+This file is used to represent a contract or agreement. A new one can be uploaded, and it will be displayed at `rules.html`.
