@@ -35,6 +35,7 @@ default_unlock_template:
     enabled: true
     increment_every: "24h"
     increment_by: "30m"
+    
 
 unlocks:
   cleaning:
