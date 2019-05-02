@@ -1,0 +1,22 @@
+fields:
+  howdoyoufeel:
+    display: "How do you feel today?"
+    type: "string"
+  comparelastweek:
+    display: "How does it feel compared to last week?"
+    type: "string"
+  howhorny:
+    display: "How horny are you?"
+    type: string
+  sleep:
+    display: "How are you sleeping?"
+  howlong:
+    display: "How long do you reasonably feel you can keep going?"
+  medical:
+    display: "Any medical issues?"
+  cleanliness:
+    display: "Any cleanliness issues?"
+
+reminder:
+  daily: true
+  weekly: true

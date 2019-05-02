@@ -1,3 +1,4 @@
+{% args lockstatus %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
         <a href="about">About</a>
         <a href="rules">Rules</a>
         <a href="games">Games</a>
+        <a href="journal">Journal</a>
         <a href="settings">Settings</a>
         <a href="help">Help</a>
         <a href="logout">Logout (%USER.NAME%)</a>
@@ -15,7 +17,7 @@
     <h1>CBSafe</h1>
 
     <h2>Status</h2>
-    <p><b>{LOCKED/UNLOCKED UNLOCKTYPE}</b></p>
+    <p><b>{ {% lockstatus %} UNLOCKTYPE}</b></p>
     <p><b>Last Operation: </b>Lock by wearer</p>
     <h2>Stats</h2>
     <table>

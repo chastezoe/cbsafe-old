@@ -4,6 +4,7 @@
 #If salt is set to CHANGE, on next run CBSafe will
 #assign a random salt.
 salt: "CHANGE" 
+session_length_seconds : 36000
 
 users:
   wearer: #username
