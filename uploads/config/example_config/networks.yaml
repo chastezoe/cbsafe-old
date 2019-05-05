@@ -1,11 +1,20 @@
 # This file defines the networks for CBSafe. It will attempt to 
 # find and connect to networks in the sequence they are defined.
 # Note that this only works for 2.4GHz networks. If no networks
-# are found, CBSafe will create it's own network.
+# are found, CBSafe will create it's own network if 
+# self_network.enabled=true. It'll periodically look for a
+# network in it's network list if it's in self_network mode.
+
+mdns_enabled: true
+hostname: cbsafe.local
 
 self_network:
+  enabled: true
+  broadcast: true #whether the network name is visible.
   name: "CBSafe"
-  password : "CBSafe"
+  wpa2_password : "CBSafe"
+  delay: 0 #delay in seconds before network is created.
+           #this is so it does not show up in transit.
 
 networks: [
   # format is "network_name", "network_pass"

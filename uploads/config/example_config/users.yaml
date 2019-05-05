@@ -7,13 +7,21 @@ salt: "CHANGE"
 session_length_seconds : 36000
 
 users:
-  wearer: #username
+  alice: #username
+    display_name: "Pet Alice"
     passwd: ""
     #If passwd_clear is set, on next run, CBSafe will delete this 
     # field and fill out passwd with the encrypted version.
     passwd_clear : "password" 
     access_type: "wearer"
-  alice: 
+    # Valid access types include:
+    # - wearer
+    # - wearer,admin
+    # - keyholder
+    # - keyholder,admin
+    # See the documentation for the differences.
+  barbara: 
+    display_name: "Mistress Barbara"
     passwd: ""
     passwd_clear: "password"
     access_type: "keyholder"
@@ -24,3 +32,6 @@ bots:
     display_name: "Botty the KH Bot" #optional display name
     access_type: "keyholder" #determines if bot is treated with admin
     enabled: true
+
+anonymous:
+  show_status: false

@@ -1,0 +1,5 @@
+time:
+  timezone_name: 0 #timezone, as defined by http://worldtimeapi.org/api/timezone/ 
+  timesync_frequency: 86400
+
+discreet_login_page: false

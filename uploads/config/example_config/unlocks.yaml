@@ -1,7 +1,7 @@
 # This file lists the types of unlocks. 
 # All times unless otherwise
 # specified as seconds are given in the following format: 
-# 12w3d4h5m6s , which is 12 weeks, 3 days, 4 hours, 5 minutes,
+# 1m2w3d4h5m6s , which is 1 month, 2 weeks, 3 days, 4 hours, 5 minutes,
 # 6 seconds
 
 warning_beeps_time: [
@@ -13,7 +13,9 @@ warning_beeps_time: [
 
 grace_period_seconds: 90
 grace_period_exceeded_callback: "unlock_grace_period_exceeded"
-orgasm_penalty_callback: "unlock_orgasmed_unauthorized_callback"
+unauthorized_orgasm_penalty_callback: "unlock_orgasmed_unauthorized_callback"
+unauthorized_ruin_penalty_callback: "unlock_ruined_unauthorized_callback"
+unauthorized_touch_penalty_callback: "unlock_touch_unauthorized_callback"
 
 
 unlock_default_callbacks:
@@ -42,6 +44,7 @@ unlocks:
     display_name: "Cleaning"
     wearer_can_init: true
     wearer_can_request: true
+    notes: ""
   dilation:
     display_name: "Dilation"
     wearer_can_init: true
